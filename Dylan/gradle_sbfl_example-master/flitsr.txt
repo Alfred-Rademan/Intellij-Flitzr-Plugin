@@ -1,0 +1,77 @@
+Faulty grouping (6): 1.7976931348623157e+308 [
+(9) File: temp_gradle$Helper#fib(int)  | line 13.0 
+]
+Faulty grouping (8): 0.8571 [
+(12) File: temp_gradle$Helper#fib(int)  | line 17.0 
+]
+Faulty grouping (5): 0.8182 [
+(8) File: temp_gradle$Helper#fib(int)  | line 12.0 
+]
+Faulty grouping (7): 0.75 [
+(10) File: temp_gradle$Helper#fib(int)  | line 14.0 
+(11) File: temp_gradle$Helper#fib(int)  | line 15.0 
+]
+Faulty grouping (0): 0.0 [
+(0) File: temp_gradle$App#App()  | line 6.0 
+(1) File: temp_gradle$App#getGreeting()  | line 8.0 
+]
+Faulty grouping (1): 0.0 [
+(2) File: temp_gradle$App#isEven(int)  | line 11.0 
+]
+Faulty grouping (2): 0.0 [
+(3) File: temp_gradle$App#isOdd(int)  | line 14.0 
+]
+Faulty grouping (3): 0.0 [
+(4) File: temp_gradle$App#isDivByThree(int)  | line 18.0 
+(5) File: temp_gradle$App#isDivBySix(int)  | line 22.0 
+]
+Faulty grouping (4): 0.0 [
+(6) File: temp_gradle$App#main(java.lang.String[])  | line 26.0 
+(7) File: temp_gradle$Helper#Helper()  | line 3.0 
+(20) File: temp_gradle$Library#Library()  | line 6.0 
+(36) File: temp_gradle$Library#x_Root10(double)  | line 34.0 
+(37) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 38.0 
+(38) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 40.0 
+(39) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 41.0 
+(40) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 42.0 
+(41) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 43.0 
+(42) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 45.0 
+(43) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 48.0 
+(44) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 49.0 
+(45) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 51.0 
+(46) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 52.0 
+(47) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 53.0 
+(48) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 54.0 
+(49) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 55.0 
+(50) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 56.0 
+(51) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 57.0 
+(52) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 58.0 
+(53) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 62.0 
+(54) File: temp_gradle$Library#simpOfX_Root10(int,int,int)  | line 63.0 
+]
+Faulty grouping (9): 0.0 [
+(13) File: temp_gradle$Helper#root(double,double)  | line 29.0 
+(14) File: temp_gradle$Helper#root(double,double)  | line 31.0 
+(15) File: temp_gradle$Helper#root(double,double)  | line 32.0 
+(16) File: temp_gradle$Helper#root(double,double)  | line 37.0 
+(17) File: temp_gradle$Helper#root(double,double)  | line 38.0 
+(18) File: temp_gradle$Helper#root(double,double)  | line 39.0 
+(19) File: temp_gradle$Helper#root(double,double)  | line 41.0 
+]
+Faulty grouping (10): 0.0 [
+(21) File: temp_gradle$Library#gRatio()  | line 9.0 
+(22) File: temp_gradle$Library#gRatio()  | line 11.0 
+(23) File: temp_gradle$Library#gRatio()  | line 12.0 
+(24) File: temp_gradle$Library#gRatio()  | line 13.0 
+(25) File: temp_gradle$Library#gRatio()  | line 14.0 
+(26) File: temp_gradle$Library#gRatio()  | line 15.0 
+(27) File: temp_gradle$Library#gRatio()  | line 17.0 
+(28) File: temp_gradle$Library#gRatio()  | line 18.0 
+(29) File: temp_gradle$Library#gRatio()  | line 20.0 
+(30) File: temp_gradle$Library#gRatio()  | line 21.0 
+(31) File: temp_gradle$Library#gRatio()  | line 22.0 
+(32) File: temp_gradle$Library#gRatio()  | line 24.0 
+(33) File: temp_gradle$Library#gRatio()  | line 25.0 
+(34) File: temp_gradle$Library#gRatio()  | line 27.0 
+(35) File: temp_gradle$Library#gRatio()  | line 29.0 
+]

@@ -1,0 +1,106 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.SBFL_IDE.SBFL_Analyzer</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>SBFL_Analyzer</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="21695784@sun.ac.za" url="https://www.yourcompany.com">Impact</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>
+        "SBFL_Analyzer to integrate SBFL into the IDE"
+    </description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="SBFL" anchor="bottom" factoryClass="com.sbfl_ide.sbfl_analyzer.rerun.SBFLConsolePanelToolBarFactory"/>
+        <treeStructureProvider implementation="com.sbfl_ide.sbfl_analyzer.toolwindow.FilterTreeStructureProvider"/>
+    </extensions>
+
+
+    <actions>
+        <group id="SBFL_Analyzer.NextBug" text="Next Bug" description="TODO">
+            <add-to-group group-id="NavBarToolBar" anchor="first"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.nextbug.NextBug" id="SBFL_Analyzer.Actions.NextBug" text="Next" icon="AllIcons.Actions.FindAndShowNextMatches">
+                <keyboard-shortcut first-keystroke="ctrl alt n" keymap="$default" />
+            </action>
+        </group>
+        <group id="SBFL_Analyzer.PreviousBug" text="Next Bug" description="TODO">
+            <add-to-group group-id="NavBarToolBar" anchor="after" relative-to-action="SBFL_Analyzer.NextBug"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.nextbug.PreviousBug" id="SBFL_Analyzer.Actions.PreviousBug" text="Previous" icon="AllIcons.Actions.FindAndShowPrevMatches" >
+                <keyboard-shortcut first-keystroke="ctrl alt p" keymap="$default" />
+            </action>
+            
+        </group>
+        <group id="SBFL_Analyzer.Menu" text = "SBFL" description="TODO: add discription">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+        </group>
+
+        <group id="SBFL_Analyzer.ShowFailed" text="Show failed tests">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.failed_tests.FindFailedTests" id="SBFL_Analyzer.Actions.Failed" text="Show failed tests"/>
+
+        </group>
+
+        <group id="SBFL_Analyzer.Rerun" text="Rerun">
+            <add-to-group group-id="SBFL_Analyzer.Menu" anchor="last"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.rerun.RerunSBFL" id="SBFL_Analyzer.Actions.Rerun" text="Rerun SBFL">
+                <keyboard-shortcut first-keystroke="ctrl alt r" keymap="$default" />
+
+            </action>
+        </group>
+        <group id="SBFL_Analyzer.ToggleFilter" text="Toggle File Filter">
+            <add-to-group group-id="SBFL_Analyzer.Menu" anchor="after" relative-to-action="SBFL_Analyzer.Highlighter"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.toolwindow.ToolWindowIssues" id="SBFL_Analyzer.Actions.ToggleFiles" text="Toggle File Filter">
+
+                <keyboard-shortcut first-keystroke="ctrl alt f" keymap="$default" />
+
+            </action>
+        </group>
+        <group id="SBFL_Analyzer.Highlighter" text="Highlighter" popup="true" >
+            <add-to-group group-id="SBFL_Analyzer.Menu" anchor="first" />
+            <action class="com.sbfl_ide.sbfl_analyzer.Highlighter" id = "SBFL_Analyzer.Actions.Highlighter"
+                    text="Show All">
+                <keyboard-shortcut first-keystroke="ctrl alt h" keymap="$default" />
+
+            </action>
+            <action class="com.sbfl_ide.sbfl_analyzer.HighlightCritical" id="SBFL_Analyzer.Actions.HighlightCritical"
+                    text = "Show Critical Only"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.RangeHighlight" id="SBFL_Analyzer.Actions.RangeHighlight"
+                    text = "Show SBFL Range"/>
+            <action class="com.sbfl_ide.sbfl_analyzer.ClearHighlights" id="SBFL_Analyzer.Actions.ClearHighlights"
+                    text = "Clear SBFL Highlights">
+                <keyboard-shortcut first-keystroke="ctrl alt c" keymap="$default" />
+
+            </action>
+        </group>
+
+        <group id="SBFL_Analyzer.Visualisations" text="Visualise" popup="true" >
+            <add-to-group group-id="SBFL_Analyzer.Menu" anchor="first" />
+            <action class="com.sbfl_ide.sbfl_analyzer.VEntireProgram" id= "SBFL_Analyzer.Actions.VEntireProgram"
+                    text="Entire Program">
+                <keyboard-shortcut first-keystroke="ctrl alt e" keymap="$default" />
+
+            </action>
+            <action class="com.sbfl_ide.sbfl_analyzer.VCurrentClass" id= "SBFL_Analyzer.Actions.VCurrentClass"
+                    text= "Current Class">
+                <keyboard-shortcut first-keystroke="ctrl alt v" keymap="$default" />
+
+            </action>
+        </group>
+
+
+
+    </actions>
+</idea-plugin>

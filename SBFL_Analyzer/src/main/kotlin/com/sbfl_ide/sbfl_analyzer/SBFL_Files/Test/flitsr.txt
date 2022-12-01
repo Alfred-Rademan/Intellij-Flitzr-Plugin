@@ -1,0 +1,22 @@
+Faulty grouping (0): 1.7976931348623157e+308 [
+(0) File: temp_gradle$Company#App()  | line 6.0
+(1) File: temp_gradle$Company#getGreeting()  | line 8.0
+]
+Faulty grouping (1): 0.0 [
+(2) File: temp_gradle$App#main(java.lang.String[])  | line 12.0 
+(3) File: temp_gradle$App#main(java.lang.String[])  | line 13.0 
+]
+Faulty grouping (1): 10.0 [
+(2) File: temp_gradle$Dev#main(java.lang.String[])  | line 12.0
+(3) File: temp_gradle$Dev#main(java.lang.String[])  | line 14.0
+(3) File: temp_gradle$Dev#main(java.lang.String[])  | line 15.0
+(3) File: temp_gradle$Dev#main(java.lang.String[])  | line 16.0
+]
+Faulty grouping (1): 1.0 [
+(2) File: temp_gradle$App#main(java.lang.String[])  | line 12.0
+(3) File: temp_gradle$App#main(java.lang.String[])  | line 15.0
+]
+Faulty grouping (1): 4.0 [
+(2) File: temp_gradle$App#main(java.lang.String[])  | line 12.0
+(3) File: temp_gradle$App#main(java.lang.String[])  | line 16.0
+]
